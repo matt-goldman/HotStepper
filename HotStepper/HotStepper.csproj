@@ -15,8 +15,14 @@
     <PackageId>HotStepper</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Matt Goldman</Authors>
-    <Description>A custom stepper for Xamarin Forms with round +/- buttons and a value displayed in between them.</Description>
+    <Description>A custom stepper for Xamarin Forms with round + / - buttons and a value displayed in between them.
+
+Max value, increment value, button color and label color can all be customised.</Description>
     <PackOnBuild>true</PackOnBuild>
+    <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/matt-goldman/HotStepper</PackageProjectUrl>
+    <Summary>A custom stepper for Xamarin Forms with round +/- buttons and a value displayed in between them.</Summary>
+    <Title>HotStepper</Title>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
