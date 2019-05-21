@@ -19,7 +19,6 @@
 
 Max value, increment value, button color and label color can all be customised.</Description>
     <PackOnBuild>true</PackOnBuild>
-    <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/matt-goldman/HotStepper</PackageProjectUrl>
     <Summary>A custom stepper for Xamarin Forms with round +/- buttons and a value displayed in between them.</Summary>
     <Title>HotStepper</Title>
@@ -47,6 +46,7 @@ Max value, increment value, button color and label color can all be customised.<
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="license\license.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -64,6 +64,9 @@ Max value, increment value, button color and label color can all be customised.<
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="license\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
