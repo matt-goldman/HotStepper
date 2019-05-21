@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotStepper.hsStepperView">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Margin="10,0,10,0">
+        
+            <Button BackgroundColor="{Binding ButtonColor}"
+                    TextColor="White"
+                    Text="-"
+                    CornerRadius="15"
+                    HeightRequest="30"
+                    WidthRequest="30"
+                    FontAttributes="Bold"
+                    x:Name="btnMinus"
+                    Clicked="btnMinus_Clicked"
+                    HorizontalOptions="Center"/>
+            
+            <Label TextColor="{Binding LabelColor}"
+                   WidthRequest="25"
+                   Text="{Binding Text}"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   x:Name="lblValue"/>
+            
+            <Button BackgroundColor="{Binding ButtonColor}"
+                    TextColor="White"
+                    Text="+"
+                    CornerRadius="15"
+                    HeightRequest="30"
+                    WidthRequest="30"
+                    FontAttributes="Bold"
+                    x:Name="btnPlus"
+                    Clicked="btnPlus_Clicked"
+                    HorizontalOptions="Center"/>                    
+            
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
